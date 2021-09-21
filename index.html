@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <!-- CSS style -->
-    <link rel="stylesheet" href="https://itai-nelken.github.io/aptpac/assets/css/style.css?v=653fdb393fe2b8d641b0cee23c86bc9c9a54893d">
-    <link rel="stylesheet" href="https://oxmc.github.io/Astrobuild2/css/style/loading.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/style.css?v=653fdb393fe2b8d641b0cee23c86bc9c9a54893d">
+    <link rel="stylesheet" href="./css/loading.css" type="text/css">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <!-- Begin Jekyll SEO tag v2.7.1 -->
     <title>Pi-Ware</title>
-    <link rel="shortcut icon" type="image/gif" href="./images/logo-full.png">
+    <link rel="shortcut icon" type="image/gif" href="">
     <meta name="generator" content="Jekyll v3.9.0" />
-    <meta property="og:title" content="pi-ware" />
+    <meta property="og:title" content="Raspbian Addons" />
     <meta property="og:locale" content="en_US" />
-    <meta name="description" content="Pi-Ware is an app store for the Raspberry Pi that allows you to install apps that you can't get using sudo apt-get install in Terminal." />
-    <meta property="og:description" content="Pi-Ware is an app store for the Raspberry Pi that allows you to install apps that you can't get using sudo apt-get install in Terminal." />
-    <link rel="canonical" href="https://pi-ware.ml/" />
-    <meta property="og:url" content="https://pi-ware.ml/" />
-    <meta property="og:site_name" content="Pi-Ware" />
+    <meta name="description" content="APT repository for updated, extra software for Raspberry Pies." />
+    <meta property="og:description" content="APT repository for updated, extra software for Raspberry Pies." />
+    <link rel="canonical" href="https:///" />
+    <meta property="og:url" content="https://blog.iamsjy.com/raspbian-addons-website/" />
+    <meta property="og:site_name" content="Raspbian Addons" />
     <script type="application/ld+json">
-    {"description":"Pi-Ware is an app store for the Raspberry Pi that allows you to install apps that you can't get using sudo apt-get install in Terminal.","url":"https://pi-ware.ml/","@type":"WebSite","headline":"Pi-Ware is an app store for the Raspberry Pi that allows you to install apps that you can't get using sudo apt-get install in Terminal.","name":"Pi-Ware","@context":"https://schema.org"}</script>
+    {"description":"APT repository for updated, extra software for Raspberry Pies.","url":"https://pi-ware.ml/","@type":"WebSite","headline":"APT repository for updated, extra software for Raspberry Pies.","name":"Pi-Ware","@context":"https://schema.org"}</script>
     <!-- End Jekyll SEO tag -->
   <!-- HTMl view -->
   </head>
@@ -38,48 +38,37 @@
     </script>
     <!-- Main view -->
     <section class="page-header">
-      <h1 class="project-name">Pi-Ware</h1>
-      <h2 class="project-tagline">Pi-Ware is an app store for the Raspberry Pi that allows you to install apps that you can't get using sudo apt-get install in Terminal.</h2>
-      <button onclick="window.location.assign('https://github.com/piware14/pi-ware')" class="btn">View on GitHub</button>
-      <span class="center site-footer-owner">Looking for the Pi-Ware applist?</span>
-      <button onclick="window.location.assign('https://pi-ware.ml/current-apps/')" class="btn">click here</button>
+      <h1 class="project-name">Raspbian Addons</h1>
+      <h2 class="project-tagline">An APT repository for packages/software that can't be found in the RPi repositories. Fully supports 32/64bit Debian Based ARM Operating Systems.</h2>
+      <button onclick="window.location.assign('https://github.com/chunky-milk/raspbian-addons')" class="btn">View on GitHub</button>
+      <span class="center site-footer-owner">Looking for Raspbian Addons's applist?</span>
+      <button onclick="window.location.assign('https://osdn.mirror.constant.com/storage/g/r/ra/raspbian-addons/debian/pool/')" class="btn">click here</button>
     </section>
     <section class="main-content">
-      <h1 class="center project-name" id="pi-ware">Pi-Ware</h1>
-<p class="center"><a href="https://github.com/piware14/pi-ware/blob/main/LICENSE"><img src="https://img.shields.io/github/license/piware14/pi-ware?style=flat-square" alt="license badge" /></a> <a href="https://discord.gg/BU8F6D8X6s"><img src="https://img.shields.io/discord/840124418528378881?color=7289da&label=Discord%20Server&logo=discord&style=flat-square" alt="Discord badge" /></a></p>
+      <h1 class="center project-name" id="Raspbian Addons">Raspbian Addons</h1>
 </code></pre></div></div>
 <h2 id="guide-to-installing">Installing:</h3>
-<h3 id="installing">To install Pi-Ware, run the command below:</h2>
-  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">git clone https://github.com/piware14/pi-ware.git
-cd pi-ware
-bash install</span>
+<h3 id="installing">To install the repository, make sure you have an Internet connection. Install Python with sudo apt install python3, then run this command:
+</h2>
+  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">wget -q https://cdn.jsdelivr.net/gh/chunky-milk/raspbian-addons@master/repo.py -O repo.py; python3 repo.py; rm repo.py
+  </span>
 </code></pre></div></div>
   <div class="tooltip">
   <button class="button2" onclick="copyToClipboard('#p1')" onmouseout="outFunc()"><span class="tooltiptext" id="CopyTooltip1">Copy to clipboard</span>Copy Code</button>
 </div>
-<h2 id="updating">Updating:</h2>
-<h3 id="guide-to-uninstalling">Pi-Ware will automatically update.</h3>
-<h3 id="guide-to-uninstalling">To force update Pi-Ware, run the command below:</h3>
-  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">bash $HOME/pi-ware/updater force</span>
+  
+<h2 id="uninstalling">Uninstalling:</h2>
+<h3 id="guide-to-uninstalling">To uninstall the repository, execute this command, and when asked, answer 'R'</h3>
+  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">wget -q https://cdn.jsdelivr.net/gh/chunky-milk/raspbian-addons@master/repo.sh -O repo.sh; bash repo.sh; rm repo.sh
+</span>
 </code></pre></div></div>
   <div class="tooltip">
   <button class="button2" onclick="copyToClipboard('#p2')" onmouseout="outFunc()"><span class="tooltiptext" id="CopyTooltip2">Copy to clipboard</span>Copy Code</button>
 </div>
-<h2 id="uninstalling">Uninstalling:</h2>
-<h3 id="guide-to-uninstalling">To uninstall Pi-Ware, run the command below:</h3>
-  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">pi-ware --uninstall-all</span>
-</code></pre></div></div>
-  <div class="tooltip">
-  <button class="button2" onclick="copyToClipboard('#p3')" onmouseout="outFunc()"><span class="tooltiptext" id="CopyTooltip2">Copy to clipboard</span>Copy Code</button>
-</div>
 
-<p style="display: none;" id="p1">git clone https://github.com/piware14/pi-ware.git
-cd pi-ware
-bash install
+<p style="display: none;" id="p1">wget -q https://cdn.jsdelivr.net/gh/chunky-milk/raspbian-addons@master/repo.py -O repo.py; python3 repo.py; rm repo.py
 </p>
-<p style="display: none;" id="p2">bash $HOME/pi-ware/updater force
-</p>
-<p style="display: none;" id="p3">pi-ware --uninstall-all
+<p style="display: none;" id="p2">wget -q https://cdn.jsdelivr.net/gh/chunky-milk/raspbian-addons@master/repo.sh -O repo.sh; bash repo.sh; rm repo.sh
 </p>
 <!-- Script for copy button -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -135,9 +124,9 @@ function outFunc() {
 </script>
 <!--<h2 id="reviews">Reviews</h2>-->
       <footer class="site-footer">
-          <span class="center site-footer-owner"><a href="https://github.com/piware14/pi-ware">Pi-Ware</a> is maintained by <a href="https://pi-ware.ml/Team/">The Pi-Ware-Team</a>.</span>
-          <span class="center site-footer-owner">This site is maintained by <a href="https://github.com/oxmc">oxmc</a>.</span>
-	  <span class="center site-footer-owner">© Copyright 2021 The Pi-Ware-Team. All rights reserved.</span>
+          <span class="center site-footer-owner"><a href="https://github.com/chunky-milk/raspbian-addons">Pi-Ware</a> is maintained by <a href="https://pi-ware.ml/Team/">The Pi-Ware-Team</a>.</span>
+          <span class="center site-footer-owner">This site is maintained by <a href="https://github.com/hmsjy2017">oxmc</a>.</span>
+	  <span class="center site-footer-owner">© Copyright 2021 chunky-milk All rights reserved.</span>
       </footer>
     </section>
   </body>
