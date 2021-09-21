@@ -1,3 +1,3 @@
-# pi-ware
+# Raspbian Addons
 
-This is the github pages site for pi-ware.
+This is the github pages site for Raspbian Addons.
